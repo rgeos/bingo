@@ -1,0 +1,39 @@
+body {
+  color: black;
+  background: #212121 url(images/type.png) repeat top left;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: large;
+  padding: 50px;
+  margin: 1px;
+}
+
+.oddrow {
+    background: #D8D8D8;
+}
+
+.gwt-DialogBox {
+  border: 2px outset;
+  background-color: black;
+}
+
+.gwt-DialogBox .Caption {
+  background-color: black;
+  padding: 3px;
+  margin: 2px;
+  font-weight: bold;
+  cursor: default;
+  height: 50px;
+  width: 50px;
+  font-size: xx-large;
+  color: white;
+}
+
+.left {
+    width:  300px;
+}
+
+.popupbox {
+    border: solid black 2px;
+    height: 300px;
+    width:  300px;
+}

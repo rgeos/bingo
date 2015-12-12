@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta name="pygwt:module" content="bingo">
+        <link rel="stylesheet" href="bingo.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+				<script type="text/javascript" src="js/banner2.js"></script>
+				<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+				<script type="text/javascript" src="js/modernizr.custom.41769.js"></script>
+
+        <title>bingo</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="wrapper" class="wrapper">
+                <canvas id="canvas-banner" class="inactive">
+                </canvas>
+            </div>
+        </div>
+
+		<script type="text/javascript">
+
+			if(Modernizr.canvas) {
+
+				var wrapper = document.getElementById('wrapper'),
+					loading	= document.createElement('div');
+
+				loading.className = 'loading';
+				loading.setAttribute('id','loading');
+				loading.innerHTML = 'Loading...';
+
+				wrapper.appendChild(loading);
+
+				google.load('webfont','1');
+				google.setOnLoadCallback(function() {
+					WebFont.load({
+						google: {
+							families: ['Cookie']
+						},
+						active: function(fontFamily, fontDescription) {
+							setTimeout(function() {
+
+								loading.style.display = 'none';
+
+								var banner = new Banner("Bingo");
+								banner.initialize('canvas-banner');
+
+								document.getElementById('font').style.display = 'block';
+
+							}, 1000);
+						},
+						inactive: function() {
+
+							loading.style.display = 'none';
+
+							var banner = new Banner();
+							banner.initialize('canvas-banner');
+
+						}
+					});
+				});
+
+			}
+
+		</script>
+
+
+      <div id="demo">
+        <script language="javascript" src="bootstrap.js"></script>
+      </div>
+    <script type="text/javascript" src="bootstrap.js"></script>
+<iframe id="__pygwt_historyFrame" style="display:none;"></iframe>
+</body>
+</html>
