@@ -5,4 +5,4 @@ Check the results at [`output/bingo.html`](output/bingo.html)
 
 Screenshot
 
-[[snapshot1.png]]
+![snapshot](snapshot1.png)
