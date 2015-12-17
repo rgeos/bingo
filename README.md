@@ -1,7 +1,8 @@
 ## A bingo game written in python
 
-Check the results at `output/bingo.html`
+
+Check the results at [`output/bingo.html`](output/bingo.html)
 
 Screenshot
 
-[logo](snapshot1.png "Bingo Game")
+[[snapshot1.png|alt="Bingo Game"]]
